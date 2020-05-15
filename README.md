@@ -10,3 +10,5 @@ This script requires a non-normalized **CountMatrix.csv** and a **coldata.csv** 
 * Execute this script in the same folder where files are stored
 
 This script will run DESeq2 with pairwise Wald's t-test and IHW when correcting p-values for multiple testing after Benjamini-Hochberg. The output will be annotated with using R's *AnnotationDbi* with the *org.Dr.eg.db*.
+
+Not the most beautiful code in world but it does the job ;)
