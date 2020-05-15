@@ -1,5 +1,5 @@
 # DESeq2Analysis
-R script for differential gene expression (DGE) analysis with DESeq2 for ecotoxicological testing on zebrafish embryos. 
+R script for differential gene expression (DGE) analysis with [DESeq2 (Love et al, 2014)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8) for ecotoxicological testing on zebrafish embryos. 
 This script requires a non-normalized **CountMatrix.csv** and a **coldata.csv** file as input.
 * A raw gene count matrix can be downloaded from the public ArrayExpress repository (i.e. E-MTAB-9056)
 * The coldata file should contain at least the following columns:
