@@ -653,25 +653,25 @@ barplot(colSums(counts(dds)),
         #xlab = "Samples",
         ylab = "Total gene counts",
         main = "Raw counts",
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         ylim = c(0,1.2*max(colSums(counts(dds))))
 )
 barplot(colSums(counts(dds, normalized=T)),  #plot mean normalized counts
         #xlab = "Samples",
         ylab = "Total gene counts",
         main = "RLE normalized counts",
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         ylim = c(0,1.2*max(colSums(counts(dds))))
 )
 boxplot(log10(counts(dds)+1),
         #xlab="Samples",
         ylab="Log10(Gene counts + 1)",
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         main="Raw counts")
 boxplot(log10(counts(dds, normalized=T)+1),
         #xlab="Samples",
         ylab="Log10(Gene counts + 1)",
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         main="RLE normalized counts")
 dev.off()
 ####################################
@@ -689,17 +689,17 @@ pdf(file = paste0("Plots/DataQC/",substance,"_NormCount_Transformation.pdf"), #p
 # plot...
 par(mfrow=c(1,3))
 boxplot(df.counts, notch = TRUE,
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         main = "Normalized read counts - No zero counts",
         ylab = "read counts")
 
 boxplot(df.ntd, notch = TRUE,
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         main = "log2 Transformation",
         ylab = "log2 (norm. read counts + 1)")
 
 boxplot(df.rld, notch = TRUE,
-        las = 3, #rotating sample labels 90°
+        las = 3, #rotating sample labels 90Â°
         main = "rlog Transformation",
         ylab = "rlog (norm. read counts)")
 
